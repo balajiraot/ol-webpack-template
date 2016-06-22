@@ -18,6 +18,12 @@ webpackConfig.output = {
    filename: `/${appBaseUrl}/scripts/bundle.js`,
    libraryTarget: 'umd'
 };
+webpackConfig.plugins = [
+        new webpack.DefinePlugin({
+          APP_BASE_URL: JSON.stringify(`/${appBaseUrl}/`),
+          __DEV__: true
+        }),
+    ];
 
 app.use(webpackDevMiddleware(webpack(webpackConfig)));
 
