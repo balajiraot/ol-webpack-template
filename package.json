@@ -1,0 +1,21 @@
+{
+  "name": "ol-webpack-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"./bin/www"
+  },
+
+  "devDependencies": {
+    "openlayers": "^3.16.0"
+  },
+  "dependencies": {
+    "webpack": "^1.13.1",
+    "express": "^4.14.0",
+    "less-middleware": "^2.1.0",
+    "piping": "^0.3.2",
+    "pug": "^0.1.0",
+    "webpack-dev-middleware": "^1.6.1"
+  }
+}
